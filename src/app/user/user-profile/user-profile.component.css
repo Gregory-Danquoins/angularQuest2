@@ -1,0 +1,28 @@
+.container {
+  border: 2px solid #f9f9f9;
+  min-width: 300px;
+  margin: 5rem auto;
+
+  width: 40vw;
+}
+
+.container img {
+  display: block;
+  width: 80%;
+  height: 400px;
+
+  margin: auto;
+}
+
+.details {
+  padding: 2rem 1rem;
+}
+input {
+  margin-top: 1rem;
+}
+
+.btn-ct {
+  width: 100%;
+  padding: 1rem;
+  background-color: #f1f1f1;
+}

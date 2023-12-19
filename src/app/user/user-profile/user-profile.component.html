@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="user-pictrure">
+    <img src="{{ user.photo }}" alt="" />
+  </div>
+  <div class="details">
+    <p>Nom: {{ user.name }}</p>
+    <p>Prénom: {{ user.firstName }}</p>
+    <br />
+    <p [hidden]="!showAge">Age: {{ user.age }}</p>
+    <div>{{ user.quote || "two beer or not to beer" }}</div>
+    <input
+      type="text"
+      [(ngModel)]="user.quote"
+      placeholder="two beer or not to beer"
+    />
+  </div>
+  <div class="btn-ct">
+    <button (click)="toggleAge()">Afficher/Masquer mon âge</button>
+  </div>
+</div>
